@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #ff69b4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #ffb6c1;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ff69b4;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff69b4;
+    color: white;
+    border: 2px solid #ff69b4;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ul li {
+    background-color: #fff0f5;
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.ul li p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+    word-wrap: break-word;
+}
+
+.ul li .task-buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.ul li .task-buttons button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.ul li .task-buttons button:hover {
+    background-color: #ff1493;
+}
